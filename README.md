@@ -5,4 +5,4 @@ Website informativo sobre pontos de coleta de lixos recicláveis e de materiais 
 
 
 ## Detalhes
-![Imagem da página](https://github.com/deborapolesel/Projeto-Ecoleta/blob/master/ecoleta.png)
+![Imagem da página](https://github.com/deborapolesel/Projeto-Ecoleta/blob/master/detalhes.png)
