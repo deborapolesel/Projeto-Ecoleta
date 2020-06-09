@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar um ponto de coleta</title>
+    <link rel="stylesheet" href="styles/create-point.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+</head>
+<body>
+    <div id="page-create-point">
+        <header>
+            <h3 class="logo">Ecoleta</h3>                
+            <a href="index.html">Voltar para home</a>
+        </header>
+
+        <form action="">
+            <h1>Cadastro de ponto de coleta</h1>
+            
+            <fieldset>
+                <legend>
+                    <h2>Dados da entidade</h2>
+                </legend>
+
+
+                <div class="field">
+                    <label for="name">Nome da entidade</label>
+                    <input type="text" name="name" required>
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="adress">Endereço</label>
+                        <input type="text" name="adress" required>
+                    </div>
+                    <div class="field">
+                        <label for="">Número/Complemento</label>
+                        <input type="text" name="adress2" required>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="state">Estado</label>
+                        <select name="uf" required>
+                            <option value="">Selecione o Estado</option>
+                        </select>
+
+                        <input type="hidden" name="state">
+                    </div>
+                    <div class="field">
+                        <label for="city">Cidade</label>
+                        <select name="city" disabled required>
+                            <option value="">Selecione a Cidade</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h2>Itens de coleta</h2>
+                </legend>
+
+                <div class="items-grid">
+                    <li data-id="1">
+                        <img src="styles/recycle2.png" alt="Lâmpadas" class="items-img">
+                        <span>Lâmpadas</span>
+                    </li>
+                    <li data-id="2">
+                        <img src="styles/recycle1.png" alt="Papel e Papelão" class="items-img">
+                        <span>Papel e Papelão</span>
+                    </li>
+                    <li data-id="3">
+                        <img src="styles/recycle3.png" alt="Pilhas e Baterias" class="items-img">
+                        <span>Pilhas e Baterias</span>
+                    </li>
+                    <li data-id="4">
+                        <img src="styles/recycle4.png" alt="Aparelhos eletrônicos" class="items-img">
+                        <span>Aparelhos eletrônicos</span>
+                    </li>
+                    <li data-id="5">
+                        <img src="styles/recycle5.png" alt="Óleo de cozinha" class="items-img">
+                        <span>Óleo de cozinha</span>
+                    </li>
+                    <li data-id="6">
+                        <img src="styles/recycle6.png" alt="Material orgânico" class="items-img">
+                        <span>Material orgânico</span>
+                    </li>
+                </div>
+
+                <input type="hidden" name="items">
+
+            </fieldset>
+
+            <button type="submit">Cadastrar ponto de coleta</button>
+        </form>
+    </div>
+    
+    <script src="scripts/create-point.js">
+
+    </script>
+</body>
+</html>
