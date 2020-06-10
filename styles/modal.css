@@ -1,0 +1,87 @@
+#modal {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(2, 14, 15, 0.877);
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms;
+}
+
+#modal.hide {
+    display: none;
+}
+
+#modal .content {
+    color: white;
+    width: 35em;
+    padding: 0.1em;
+}
+
+#modal .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+#modal .header a {
+    width: 5em;
+    height: 5em;
+    display: flex;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+#modal .header a:hover{
+    text-shadow: rgba(110, 228, 228, 0.753) 1px 1px 3px;
+    transition: 250ms;
+}
+
+#modal .header h1 {
+    color: white;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+#modal form label{
+    font-size: 1em;
+    line-height: 1em;
+
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+#modal form .field {
+    display: flex;
+}
+
+#modal form input {
+    flex: 1;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    border: 0;
+    padding: 1em;
+}
+
+
+#modal form button {
+    padding: 0.6em;
+    margin-left: 0.5em;
+    font-size: 0.8em;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color:  rgba(228, 161, 17, 0.726);
+    border: 0;
+}
+
+#modal form button:hover{
+    background-color: rgba(248, 213, 59, 0.795);
+    transition: 250ms;
+}

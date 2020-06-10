@@ -1,0 +1,166 @@
+:root {
+    --title-color:  rgb(228, 161, 17);
+    --shadow-color:  rgb(13, 46, 77) 1px 1px 1px,   rgb(13, 46, 77)  -1px 1px 1px,   rgb(13, 46, 77)  1px -1px 1px,   rgb(13, 46, 77)  -1px -1px 1px;
+}
+
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(13, 56, 59);
+}
+
+a {
+    text-decoration: none;
+}
+
+#page-create-point {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#page-create-point header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#page-create-point header .logo {
+    color: var(--title-color);
+    font-size: 3em;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    font-family: cursive;
+    text-shadow: var(--shadow-color);
+}
+
+#page-create-point header a {
+    color: var(--title-color);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+form {
+    background-color: white;
+    padding: 1em;
+    margin-top: 0.5em;
+    border-radius: 8px;
+    max-width: 800px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: auto;
+}
+
+form h1 {
+    font-size: 1.5em;
+}
+
+form fieldset {
+    margin-top: 0.5em;
+    border: 0;
+}
+
+form legend {
+    margin-bottom: 1em;
+
+}
+
+form legend h2 {
+    font-weight: 1em;
+}
+
+form .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+}
+
+form .field-group {
+    display: flex;
+}
+
+form input, form select {
+    background-color: whitesmoke;
+    border: 0;
+    padding: 0.3em 0.4em;
+    font-size: 1.5em;
+    border-radius: 8px;
+}
+form select { /* reseta config do browser*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+form .field-group .field + .field {
+    margin-left: 0.5em;
+}
+
+form button {
+    padding: 0.8em;
+    margin: 1em;
+    font-size: 1.1em;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color:  rgba(228, 161, 17, 0.726);
+    border: 0;
+    
+}
+
+form button:hover{
+    background-color: rgba(248, 213, 59, 0.795);
+    transition: 250ms;
+}
+
+
+.items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.items-grid li{
+    background-color: whitesmoke;
+    list-style: none;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    padding: 32px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+}
+
+.items-img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 15px;
+    /* box-shadow: rgb(228, 161, 17) 0px 0px 5px; */
+}
+
+.items-grid li span {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: rgb(13, 46, 77);
+    font-weight: bold;
+}
+
+.items-grid li.selected {
+    background-color: rgba(255, 217, 49, 0.267);
+    border: 2px solid rgb(245, 195, 29);
+}
+
+.items-grid li img, .items-grid li span {
+    pointer-events: none;
+}
+

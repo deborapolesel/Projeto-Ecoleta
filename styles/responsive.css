@@ -1,0 +1,30 @@
+
+
+@media (max-width: 500px){
+    header .logo {
+    font-size: 2em;
+    }
+    #page-home header a{
+    font-size: 1em;
+    padding: 1em;
+        }
+    #page-home main h1{
+    font-size: 1.3em;
+    }
+    .textbox {
+    padding: 2em;
+    }
+    .textbox p{
+    font-size: 1em;
+    line-height: 1.5em;
+    }
+}
+
+@media (max-width: 700px){
+    #page-search-results main .cards {
+        grid-template-columns: 1fr;
+    }
+    #page-search-results main .card {
+        margin: 2em;
+    }
+}

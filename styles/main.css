@@ -1,0 +1,95 @@
+:root {
+    --title-color:  rgb(228, 161, 17);
+    --shadow-color:  rgb(13, 46, 77) 1px 1px 1px,   rgb(13, 46, 77)  -1px 1px 1px,   rgb(13, 46, 77)  1px -1px 1px,   rgb(13, 46, 77)  -1px -1px 1px;
+}
+
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(13, 56, 59);
+}
+
+a {
+    text-decoration: none;
+}
+
+#page-home {
+    height: 100vh;
+    background: url(foto2.png) no-repeat;
+}
+
+#page-home .content {
+    width: 90%;
+    max-width: 1100px;
+    margin:  0 auto; /* a primeira é top e bottom , a segunda é left e right*/
+}
+
+#page-home header{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page-home header a{
+    font-weight: bold;
+    color: var(--title-color);
+    font-size: 1.5em;
+}
+
+#page-home header a:hover {
+    color:rgba(255, 221, 68, 0.973);
+    transition: 200ms;
+}
+
+#page-home header .logo {
+    color: var(--title-color);
+    font-size: 3em;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    font-family: cursive;
+    text-shadow: var(--shadow-color);
+}
+
+#page-home main h1{
+    font-size: 2.3em;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    color: var(--title-color);
+    text-shadow: var(--shadow-color);
+    margin-top: 0;
+}
+
+#page-home .textbox {
+    background-color:  rgba(13, 56, 59, 0.61);
+    padding: 2em;
+    width: 70%;
+    padding: 4em;
+}
+
+#page-home  .textbox p{
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    font-family: cursive;
+    text-shadow: var(--shadow-color);
+    line-height: 1.8em;
+    padding-bottom: 1em;
+}
+
+
+#page-home .textbox a{
+    font-weight: bold;
+    color:  rgb(13, 56, 59);
+    font-size: 1em;
+    padding: 0.5em;
+    background-color: var(--title-color);
+    border-radius: 6px;
+}
+
+#page-home  .textbox a:hover {
+    background-color: rgba(255, 221, 68, 0.973);
+    transition: 200ms;
+}

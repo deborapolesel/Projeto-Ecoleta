@@ -1,0 +1,66 @@
+:root {
+    --title-color:  rgb(228, 161, 17);
+    --shadow-color:  rgb(13, 46, 77) 1px 1px 1px,   rgb(13, 46, 77)  -1px 1px 1px,   rgb(13, 46, 77)  1px -1px 1px,   rgb(13, 46, 77)  -1px -1px 1px;
+}
+
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(13, 56, 59);
+}
+
+a {
+    text-decoration: none;
+}
+
+#page-search-results {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    color: whitesmoke;
+}
+
+#page-search-results header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#page-search-results header .logo {
+    color: var(--title-color);
+    font-size: 3em;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    font-family: cursive;
+    text-shadow: var(--shadow-color);
+}
+
+#page-search-results header a {
+    color: var(--title-color);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#page-search-results main .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    margin-top: 1em;
+}
+#page-search-results main .cards img{
+    height: 13em;
+    width: 18em;
+    border-radius: 8px;
+}
+
+#page-search-results .cards h1 {
+    color: var(--title-color);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#page-search-results .cards h3{
+    color: yellowgreen;
+}
+
